@@ -1,0 +1,13 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+    Delete your news
+{% endblock %}
+
+{% block content %}
+    <h1>Delete News Article</h1>
+    <form method="post">
+        <button type="submit">Delete</button>
+        {% csrf_token %}
+    </form>
+{% endblock %}
